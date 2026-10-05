@@ -1,0 +1,22 @@
+# HTTP + parsing
+httpx>=0.27,<1.0
+beautifulsoup4>=4.12
+lxml>=5.2
+
+# Database / ORM (async)
+sqlmodel>=0.0.21
+SQLAlchemy[asyncio]>=2.0.30
+aiosqlite>=0.20          # SQLite async driver (default / fallback)
+asyncpg>=0.29            # PostgreSQL async driver (used by the scraper)
+psycopg2-binary>=2.9     # PostgreSQL sync driver (ad-hoc scripts, BI tools, migrations)
+
+# Configuration + logging
+pydantic>=2.7
+pydantic-settings>=2.7
+python-dotenv>=1.0
+loguru>=0.7
+tzdata>=2024.1           # IANA timezone database (required for zoneinfo on Windows)
+
+# Dashboard
+streamlit>=1.50          # width="stretch" + st.fragment(run_every=...)
+pandas>=2.2
